@@ -1,0 +1,28 @@
+{
+  "name": "jsdoc-extractor",
+  "version": "1.0.0",
+  "description": "JSDoc annotations extractor",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "ava --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fraxken/jsdoc-extractor.git"
+  },
+  "author": "GENTILHOMME.Thomas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fraxken/jsdoc-extractor/issues"
+  },
+  "homepage": "https://github.com/fraxken/jsdoc-extractor#readme",
+  "dependencies": {
+    "is-buffer": "^1.1.6"
+  },
+  "devDependencies": {
+    "ava": "^0.24.0"
+  }
+}
