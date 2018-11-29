@@ -20,9 +20,9 @@
   },
   "homepage": "https://github.com/fraxken/jsdoc-extractor#readme",
   "dependencies": {
-    "is-buffer": "^1.1.6"
+    "is-buffer": "^2.0.3"
   },
   "devDependencies": {
-    "ava": "^0.24.0"
+    "ava": "^0.25.0"
   }
 }
