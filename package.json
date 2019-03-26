@@ -7,12 +7,24 @@
     "test": "test"
   },
   "scripts": {
-    "test": "ava --verbose"
-  },
+    "prepublishOnly": "pkg-ok",
+    "test": "ava --verbose",
+    "coverage": "nyc ava",
+    "report": "nyc report --reporter=html"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fraxken/jsdoc-extractor.git"
   },
+  "engines": {
+    "node": ">=10"
+    },
+    "husky": {
+        "hooks": {
+            "pre-push": "npm test",
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+        }
+    },
   "author": "GENTILHOMME.Thomas",
   "license": "MIT",
   "bugs": {
