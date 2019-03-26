@@ -1,38 +1,36 @@
-'use strict';
-
-// CHAR CONSTANTS
-const CHAR = {
-    slash: '/'.charCodeAt(0),
-    star:  '*'.charCodeAt(0)
-};
+// CONSTANTS
+const SLASH = "/".charCodeAt(0);
+const STAR = "*".charCodeAt(0);
 
 /**
+ * @generator
  * @func jsdocExtractor
- * @param {Buffer} buf 
- * @returns {String[]}
+ * @desc Extract all JSDoc blocks from a Buffer
+ * @param {!Buffer} buf Buffer
+ * @returns {IterableIterator<Buffer>}
+ *
+ * @throws {TypeError}
+ * @throws {Error}
  */
-function jsdocExtractor(buf) {
+function* jsdocExtractor(buf) {
     if (!Buffer.isBuffer(buf)) {
-        throw new TypeError('buf should be a buffer');
+        throw new TypeError("buf must be a Node.js Buffer");
     }
-    const jsdoc = [];
-    let offset = 0, inBlock = false, i = 0;
-    for (i = 0; i < buf.length; i++) {
-        if (buf[i] === CHAR.slash) {
-            if (!inBlock && buf[i+1] === CHAR.star && buf[i+2] === CHAR.star) {
+
+    let offset = 0;
+    let inBlock = false;
+    for (let i = 0; i < buf.length; i++) {
+        if (buf[i] === SLASH) {
+            if (inBlock === false && buf[i+1] === STAR && buf[i+2] === STAR) {
                 inBlock = true;
-                offset = i; 
+                offset = i;
             }
-            else if(buf[i -1] === CHAR.star) {
-                jsdoc.push(buf.slice(offset, i + 1).toString());
+            else if(buf[i -1] === STAR) {
+                yield buf.slice(offset, i + 1);
                 inBlock = false;
             }
         }
     }
-    if (inBlock) {
-        throw new Error('Unclosed JSDoc detected!');
-    }
-    return jsdoc;
 }
 
 // Export JSDoc extractor
