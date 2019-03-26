@@ -1,5 +1,4 @@
 'use strict';
-const isBuffer = require('is-buffer');
 
 // CHAR CONSTANTS
 const CHAR = {
@@ -13,7 +12,7 @@ const CHAR = {
  * @returns {String[]}
  */
 function jsdocExtractor(buf) {
-    if (!isBuffer(buf)) {
+    if (!Buffer.isBuffer(buf)) {
         throw new TypeError('buf should be a buffer');
     }
     const jsdoc = [];
