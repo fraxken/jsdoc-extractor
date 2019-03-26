@@ -21,6 +21,7 @@
   "homepage": "https://github.com/fraxken/jsdoc-extractor#readme",
   "dependencies": {},
   "devDependencies": {
+    "@slimio/eslint-config": "^2.0.3",
     "ava": "^0.25.0"
   }
 }

@@ -11,4 +11,8 @@ const jsdocAnnotations = `
   */
 `;
 
-console.log(jsdocExtractor(new Buffer(jsdocAnnotations)));
+const it = jsdocExtractor(Buffer.from(jsdocAnnotations));
+for (const block of it) {
+    console.log(block.toString());
+    console.log("-----");
+}
