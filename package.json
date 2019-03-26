@@ -22,6 +22,7 @@
   "dependencies": {},
   "devDependencies": {
     "@slimio/eslint-config": "^2.0.3",
+    "@slimio/is": "^1.5.0",
     "ava": "^0.25.0"
   }
 }

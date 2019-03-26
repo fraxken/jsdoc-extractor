@@ -1,18 +1,30 @@
+// Require Third-party Dependencies
+const ava = require("ava");
+const is = require("@slimio/is");
+
+// Require Internal
 const jsdocExtractor = require('../index');
 
-const jsdocAnnotations = `
-/**
- * @class test
- * @classdesc xd
- */
+ava("test export", (assert) => {
+    assert.true(is.generatorFunction(jsdocExtractor));
+});
 
- /**
-  * @class xd
-  */
-`;
+ava("extract two blocks", (assert) => {
+    assert.plan(3);
+    const jsdocAnnotations = `
+    /**
+     * @class test
+     * @classdesc xd
+     */
 
-const it = jsdocExtractor(Buffer.from(jsdocAnnotations));
-for (const block of it) {
-    console.log(block.toString());
-    console.log("-----");
-}
+    /**
+     * @class xd
+     */
+    `;
+
+    const it = jsdocExtractor(Buffer.from(jsdocAnnotations));
+    assert.true(is.iterable(it));
+    for (const block of it) {
+        assert.true(Buffer.isBuffer(block));
+    }
+});
