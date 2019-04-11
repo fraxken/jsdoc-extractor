@@ -21,11 +21,11 @@ function* jsdocExtractor(buf) {
     let inBlock = false;
     for (let i = 0; i < buf.length; i++) {
         if (buf[i] === SLASH) {
-            if (inBlock === false && buf[i+1] === STAR && buf[i+2] === STAR) {
+            if (inBlock === false && buf[i + 1] === STAR && buf[i + 2] === STAR) {
                 inBlock = true;
                 offset = i;
             }
-            else if(buf[i -1] === STAR) {
+            else if (buf[i - 1] === STAR) {
                 yield buf.slice(offset, i + 1);
                 inBlock = false;
             }

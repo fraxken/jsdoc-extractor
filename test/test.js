@@ -3,7 +3,7 @@ const ava = require("ava");
 const is = require("@slimio/is");
 
 // Require Internal
-const jsdocExtractor = require('../index');
+const jsdocExtractor = require("../index");
 
 ava("test export", (assert) => {
     assert.true(is.generatorFunction(jsdocExtractor));
