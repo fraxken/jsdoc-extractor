@@ -3,9 +3,6 @@
   "version": "2.0.0",
   "description": "JSDoc annotations extractor",
   "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
     "prepublishOnly": "pkg-ok",
     "test": "ava --verbose",
@@ -16,6 +13,10 @@
     "type": "git",
     "url": "git+https://github.com/fraxken/jsdoc-extractor.git"
   },
+  "keywords": [
+      "jsdoc",
+      "extractor"
+  ],
   "engines": {
     "node": ">=10"
   },
