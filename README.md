@@ -4,7 +4,7 @@
 ![MIT](https://img.shields.io/github/license/mashape/apistatus.svg)
 ![dep](https://img.shields.io/david/fraxken/jsdoc-extractor.svg)
 
-JSDoc extractor
+Fast JSDoc extractor with no dependencies (parse the Buffer).
 
 ## Requirements
 - Node.js v10 or higher
@@ -30,6 +30,11 @@ for (const doc of jsdocExtractor(buf)) {
     console.log("-------------");
 }
 ```
+
+## API
+
+### jsdocExtractor(buf: Buffer): IterableIterator<Buffer>
+Take a buffer as Argument and return a Synchronous Iterator that will return JSDoc block.
 
 ## License
 MIT
