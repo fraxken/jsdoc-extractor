@@ -3,6 +3,8 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/fraxken/jsdoc-extractor/commit-activity)
 ![MIT](https://img.shields.io/github/license/mashape/apistatus.svg)
 ![dep](https://img.shields.io/david/fraxken/jsdoc-extractor.svg)
+![size](https://img.shields.io/bundlephobia/min/jsdoc-extractor.svg)
+[![Known Vulnerabilities](https://snyk.io/test/github/fraxken/jsdoc-extractor/badge.svg?targetFile=package.json)](https://snyk.io/test/github/fraxken/jsdoc-extractor?targetFile=package.json)
 
 Fast JSDoc extractor with no dependencies (parse the Buffer).
 
@@ -33,8 +35,8 @@ for (const doc of jsdocExtractor(buf)) {
 
 ## API
 
-### jsdocExtractor(buf: Buffer): IterableIterator<Buffer>
-Take a buffer as Argument and return a Synchronous Iterator that will return JSDoc block.
+### jsdocExtractor(buf: Buffer): IterableIterator< Buffer >
+Take a buffer as Argument and return a Synchronous Iterator that return JSDoc block as Buffer.
 
 ## License
 MIT
