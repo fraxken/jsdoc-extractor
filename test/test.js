@@ -10,7 +10,6 @@ ava("test export", (assert) => {
 });
 
 ava("extract two blocks", (assert) => {
-    assert.plan(3);
     const jsdocAnnotations = `
     /**
      * @class test
@@ -25,6 +24,9 @@ ava("extract two blocks", (assert) => {
     const it = jsdocExtractor(Buffer.from(jsdocAnnotations));
     assert.true(is.iterable(it));
     for (const block of it) {
-        assert.true(Buffer.isBuffer(block));
+        assert.true(Array.isArray(block));
+        assert.true(Buffer.isBuffer(block[0]));
+        assert.true(typeof block[1] === "number");
+        assert.true(typeof block[2] === "number");
     }
 });

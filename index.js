@@ -7,10 +7,9 @@ const STAR = "*".charCodeAt(0);
  * @func jsdocExtractor
  * @desc Extract all JSDoc blocks from a Buffer
  * @param {!Buffer} buf Buffer
- * @returns {IterableIterator<Buffer>}
+ * @returns {IterableIterator<[Buffer, Number, Number]>}
  *
  * @throws {TypeError}
- * @throws {Error}
  */
 function* jsdocExtractor(buf) {
     if (!Buffer.isBuffer(buf)) {
@@ -26,7 +25,7 @@ function* jsdocExtractor(buf) {
                 offset = i;
             }
             else if (buf[i - 1] === STAR) {
-                yield buf.slice(offset, i + 1);
+                yield [buf.slice(offset, i + 1), offset, i + 1];
                 inBlock = false;
             }
         }

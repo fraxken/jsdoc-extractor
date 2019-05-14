@@ -27,7 +27,8 @@ const jsdocExtractor = require("jsdoc-extractor");
 const { readFileSync } = require("fs");
 
 const buf = readFileSync("./sourceCode.js");
-for (const doc of jsdocExtractor(buf)) {
+for (const [doc, start, end] of jsdocExtractor(buf)) {
+    console.log(`Found a new JSDoc block between ${start} and ${end}`);
     console.log(doc.toString());
     console.log("-------------");
 }
@@ -35,8 +36,13 @@ for (const doc of jsdocExtractor(buf)) {
 
 ## API
 
-### jsdocExtractor(buf: Buffer): IterableIterator< Buffer >
-Take a buffer as Argument and return a Synchronous Iterator that return JSDoc block as Buffer.
+### jsdocExtractor(buf: Buffer): IterableIterator< [Buffer, number, number] >
+Take a buffer as Argument and return a Synchronous Iterator. The value returned by the iterator is the following:
+```
+[buffer, start, end]
+```
+
+Where **start** and **end** are the offset to retrieve (slice) the original Buffer.
 
 ## License
 MIT
