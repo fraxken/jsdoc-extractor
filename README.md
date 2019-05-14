@@ -5,6 +5,7 @@
 ![dep](https://img.shields.io/david/fraxken/jsdoc-extractor.svg)
 ![size](https://img.shields.io/bundlephobia/min/jsdoc-extractor.svg)
 [![Known Vulnerabilities](https://snyk.io/test/github/fraxken/jsdoc-extractor/badge.svg?targetFile=package.json)](https://snyk.io/test/github/fraxken/jsdoc-extractor?targetFile=package.json)
+[![Build Status](https://travis-ci.com/fraxken/jsdoc-extractor.svg?branch=master)](https://travis-ci.com/fraxken/jsdoc-extractor)
 
 Fast JSDoc extractor with no dependencies (parse the Buffer).
 
