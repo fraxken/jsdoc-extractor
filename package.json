@@ -15,7 +15,12 @@
   },
   "keywords": [
     "jsdoc",
-    "extractor"
+    "extractor",
+    "buffer",
+    "fast",
+    "extract",
+    "parse",
+    "parser"
   ],
   "engines": {
     "node": ">=10"
