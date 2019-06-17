@@ -6,7 +6,7 @@
   "scripts": {
     "prepublishOnly": "pkg-ok",
     "test": "ava --verbose",
-    "coverage": "nyc ava",
+    "coverage": "nyc npm test",
     "report": "nyc report --reporter=html"
   },
   "repository": {
