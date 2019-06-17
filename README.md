@@ -45,5 +45,11 @@ Take a buffer as Argument and return a Synchronous Iterator. The value returned 
 
 Where **start** and **end** are the offset to retrieve (slice) the original Buffer.
 
+## Related projects
+
+| name | description |
+| --- | --- |
+| [jsdoc-tokenizer](https://github.com/fraxken/jsdoc-tokenizer) | Tokenizer for JSDoc blocks |
+
 ## License
 MIT
