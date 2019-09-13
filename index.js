@@ -1,13 +1,14 @@
+"use strict";
+
 // CONSTANTS
 const SLASH = "/".charCodeAt(0);
 const STAR = "*".charCodeAt(0);
 
 /**
  * @generator
- * @func jsdocExtractor
- * @desc Extract all JSDoc blocks from a Buffer
+ * @function jsdocExtractor
+ * @description Extract all JSDoc blocks from a Buffer
  * @param {!Buffer} buf Buffer
- * @returns {IterableIterator<[Buffer, Number, Number]>}
  *
  * @throws {TypeError}
  */

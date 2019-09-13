@@ -1,3 +1,5 @@
+"use strict";
+
 // Require Third-party Dependencies
 const ava = require("ava");
 const is = require("@slimio/is");
