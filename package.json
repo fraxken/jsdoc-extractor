@@ -22,6 +22,10 @@
     "parse",
     "parser"
   ],
+  "files": [
+      "index.js",
+      "index.d.ts"
+  ],
   "engines": {
     "node": ">=10"
   },
