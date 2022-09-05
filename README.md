@@ -16,8 +16,8 @@
 <a href="https://snyk.io/test/github/fraxken/jsdoc-extractor?targetFile=package.json">
   <img src="https://snyk.io/test/github/fraxken/jsdoc-extractor/badge.svg?targetFile=package.json" alt="Known Vulnerabilities">
 </a>
-<a href="https://travis-ci.com/fraxken/jsdoc-extractor">
-  <img src="https://travis-ci.com/fraxken/jsdoc-extractor.svg?branch=master" alt="Build Status">
+<a href="https://github.com/fraxken/jsdoc-extractor">
+  <img src="https://img.shields.io/github/workflow/status/fraxken/jsdoc-extractor/Node.js%20CI" alt="githubaction">
 </a>
 </p>
 
