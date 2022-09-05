@@ -1,12 +1,26 @@
-# jsdoc-extractor
-![version](https://img.shields.io/badge/dynamic/json.svg?url=https://raw.githubusercontent.com/fraxken/jsdoc-extractor/master/package.json&query=$.version&label=Version)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/fraxken/jsdoc-extractor/commit-activity)
-![MIT](https://img.shields.io/github/license/mashape/apistatus.svg)
-![size](https://img.shields.io/bundlephobia/min/jsdoc-extractor.svg)
-[![Known Vulnerabilities](https://snyk.io/test/github/fraxken/jsdoc-extractor/badge.svg?targetFile=package.json)](https://snyk.io/test/github/fraxken/jsdoc-extractor?targetFile=package.json)
-[![Build Status](https://travis-ci.com/fraxken/jsdoc-extractor.svg?branch=master)](https://travis-ci.com/fraxken/jsdoc-extractor)
+<p align="center"><h1 align="center">
+  jsdoc-extractor
+</h1>
 
-Fast JSDoc extractor with no dependencies (parse the Buffer).
+<p align="center">
+  Fast JSDoc extractor with no dependencies (parsing directly from Buffer input).
+</p>
+
+<p align="center">
+<img src="https://img.shields.io/badge/dynamic/json.svg?url=https://raw.githubusercontent.com/fraxken/jsdoc-extractor/master/package.json&amp;query=$.version&amp;label=Version" alt="version">
+<a href="https://github.com/fraxken/jsdoc-extractor/commit-activity">
+  <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" alt="Maintenance">
+</a>
+<img src="https://img.shields.io/github/license/mashape/apistatus.svg" alt="MIT">
+<img src="https://img.shields.io/bundlephobia/min/jsdoc-extractor.svg" alt="size">
+<a href="https://snyk.io/test/github/fraxken/jsdoc-extractor?targetFile=package.json">
+  <img src="https://snyk.io/test/github/fraxken/jsdoc-extractor/badge.svg?targetFile=package.json" alt="Known Vulnerabilities">
+</a>
+<a href="https://travis-ci.com/fraxken/jsdoc-extractor">
+  <img src="https://travis-ci.com/fraxken/jsdoc-extractor.svg?branch=master" alt="Build Status">
+</a>
+</p>
+
 
 ## Requirements
 - Node.js v14 or higher

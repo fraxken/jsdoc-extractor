@@ -1,6 +1,7 @@
 {
-    "extends": "@slimio/eslint-config",
-    "rules": {
-        "id-length": "off"
-    }
+  "extends": "@nodesecure/eslint-config",
+  "parserOptions": {
+      "sourceType": "script",
+      "requireConfigFile": false
+  }
 }
