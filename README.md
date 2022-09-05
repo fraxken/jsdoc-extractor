@@ -2,7 +2,6 @@
 ![version](https://img.shields.io/badge/dynamic/json.svg?url=https://raw.githubusercontent.com/fraxken/jsdoc-extractor/master/package.json&query=$.version&label=Version)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/fraxken/jsdoc-extractor/commit-activity)
 ![MIT](https://img.shields.io/github/license/mashape/apistatus.svg)
-![dep](https://img.shields.io/david/fraxken/jsdoc-extractor.svg)
 ![size](https://img.shields.io/bundlephobia/min/jsdoc-extractor.svg)
 [![Known Vulnerabilities](https://snyk.io/test/github/fraxken/jsdoc-extractor/badge.svg?targetFile=package.json)](https://snyk.io/test/github/fraxken/jsdoc-extractor?targetFile=package.json)
 [![Build Status](https://travis-ci.com/fraxken/jsdoc-extractor.svg?branch=master)](https://travis-ci.com/fraxken/jsdoc-extractor)
@@ -10,7 +9,7 @@
 Fast JSDoc extractor with no dependencies (parse the Buffer).
 
 ## Requirements
-- Node.js v10 or higher
+- Node.js v14 or higher
 
 ## Getting Started
 
